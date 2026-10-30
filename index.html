@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informacion sobre PLA Backups, una utilidad privada de copias de seguridad personales.">
+  <title>PLA Backups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="eyebrow">UTILIDAD PRIVADA</p>
+      <h1>PLA Backups</h1>
+      <p class="intro">Copias de seguridad personales, cifradas antes de salir del servidor.</p>
+    </header>
+
+    <section class="content" aria-labelledby="about-title">
+      <h2 id="about-title">Acerca de la aplicacion</h2>
+      <p>PLA Backups es una herramienta privada para mantener copias de seguridad de la infraestructura de su propietario. No ofrece registro, cuentas ni servicio a terceros.</p>
+      <p>Restic cifra los snapshots en el servidor OCI antes de que rclone los transfiera a Google Drive. La autorizacion de Google usa el permiso <code>drive.file</code>, limitado a los archivos que crea o utiliza esta aplicacion; no solicita acceso general a los archivos del Drive.</p>
+      <p>Las copias pueden contener archivos de sitios, exportaciones de bases de datos y configuracion de servicios seleccionados por el operador. Los datos se almacenan en el Google Drive de ese operador.</p>
+    </section>
+
+    <nav class="links" aria-label="Informacion legal">
+      <a href="privacy.html">Politica de privacidad</a>
+      <a href="terms.html">Condiciones de uso</a>
+    </nav>
+
+    <footer>
+      <p>Contacto: <a href="mailto:s33nr44@gmail.com">s33nr44@gmail.com</a></p>
+      <p>Uso personal. No es un servicio publico.</p>
+    </footer>
+  </main>
+</body>
+</html>

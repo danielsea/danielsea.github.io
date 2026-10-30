@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Como PLA Backups accede, cifra y conserva datos de Google Drive.">
+  <title>Privacidad | PLA Backups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead compact">
+      <p class="eyebrow">PLA BACKUPS</p>
+      <h1>Politica de privacidad</h1>
+      <p class="intro">Ultima actualizacion: 30 de octubre de 2026</p>
+    </header>
+
+    <section class="content">
+      <h2>Uso y acceso a Google Drive</h2>
+      <p>Esta aplicacion es una herramienta privada usada por su propietario. No tiene usuarios publicos, registro, publicidad ni analitica.</p>
+      <p>rclone se conecta a la cuenta de Google autorizada con el permiso <code>drive.file</code>. Ese permiso se utiliza para crear, leer y actualizar los archivos del repositorio de copias de seguridad de esta aplicacion; no se usa para explorar el resto del Drive.</p>
+
+      <h2>Datos de las copias</h2>
+      <p>El operador selecciona que rutas se incluyen. Pueden contener archivos de sitios, exportaciones SQL, configuracion de servicios y credenciales de esos servicios. Restic cifra el contenido en el servidor antes de transferirlo. Google Drive recibe los objetos cifrados y puede procesar metadatos tecnicos, como tamanos, fechas de acceso y actividad de transferencia.</p>
+      <p>La contrasena del repositorio Restic se administra por separado. Sin ella no se pueden restaurar las copias.</p>
+
+      <h2>Almacenamiento, conservacion y terceros</h2>
+      <p>Los objetos cifrados se guardan en el Google Drive del propietario. El plan de Backrest determina la retencion y las operaciones de limpieza. Revocar OAuth detiene el acceso de la aplicacion, pero no elimina por si solo los archivos ya guardados en Drive.</p>
+      <p>Google procesa los datos conforme a sus propios terminos y politica de privacidad. Esta web estatica esta alojada por GitHub Pages; no tiene formularios, cookies de seguimiento ni recursos externos.</p>
+
+      <h2>Control de acceso y contacto</h2>
+      <p>El propietario puede revocar el permiso desde la seguridad de su cuenta de Google y borrar el repositorio de Drive por separado. Las solicitudes o preguntas sobre esta aplicacion pueden enviarse a <a href="mailto:s33nr44@gmail.com">s33nr44@gmail.com</a>.</p>
+    </section>
+
+    <nav class="links" aria-label="Navegacion">
+      <a href="index.html">Inicio</a>
+      <a href="terms.html">Condiciones de uso</a>
+    </nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+  --ink: #202c29;
+  --muted: #52635e;
+  --paper: #f4f7f5;
+  --surface: #ffffff;
+  --line: #d7e1dc;
+  --green: #2e6e5d;
+  --copper: #a85e3d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--green);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--copper);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--copper);
+  outline-offset: 3px;
+}
+
+.page {
+  width: min(100% - 32px, 760px);
+  margin: 48px auto;
+  padding: clamp(24px, 6vw, 56px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--green);
+}
+
+.masthead {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.masthead.compact {
+  padding-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--copper);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+h1,
+h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(34px, 7vw, 52px);
+}
+
+h2 {
+  margin: 30px 0 10px;
+  font-size: 24px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.content {
+  padding-top: 6px;
+}
+
+.content p {
+  margin: 10px 0 16px;
+}
+
+.content h2:first-child {
+  margin-top: 24px;
+}
+
+code {
+  padding: 2px 5px;
+  background: #edf3ef;
+  color: #274c40;
+  font-size: 0.92em;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 520px) {
+  .page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px 20px;
+    border-right: 0;
+    border-left: 0;
+  }
+}
